@@ -1,0 +1,13 @@
+#!/bin/sh
+. "$(dirname $0)/env"
+sign() {
+    signedApk=$1
+    unsignedApk=$2
+    tempApk="$1.tmp"
+    apksigner="$ANDROID_HOME/build-tools/${BUILD_TOOLS_VERSION:=30.0.3}/apksigner"
+    zipalign="$ANDROID_HOME/build-tools/${BUILD_TOOLS_VERSION:=30.0.3}/zipalign"
+    . ./signing.properties
+    "$zipalign" -v 4 "$unsignedApk" "$tempApk"
+    "$apksigner" sign  --ks "$storeFile"  --ks-key-alias $keyAlias --ks-pass "pass:$storePassword"  --key-pass pass:$keyPassword --out "$signedApk" "$tempApk"
+    rm "$tempApk"
+}

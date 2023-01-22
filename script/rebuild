@@ -1,0 +1,6 @@
+#!/bin/sh
+. "$(dirname $0)/env"
+. "$(dirname $0)/init_apktool"
+cd $ROOT
+apktool b bbll
+
