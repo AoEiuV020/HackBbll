@@ -1,0 +1,5 @@
+#!/bin/sh
+. "$(dirname $0)/env"
+cd $ROOT
+curl -o bbll.apk -L \
+    'https://github.com/xiaye13579/BBLL/releases/download/v1.2.7/BLBL_release_v1.2.7.apk'
