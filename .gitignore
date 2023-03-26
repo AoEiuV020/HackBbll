@@ -6,3 +6,5 @@
 /*-mapping.txt
 /*.apk.idsig
 /bbll
+/bbll.apk.cache
+/tmp

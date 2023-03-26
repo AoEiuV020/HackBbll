@@ -1,0 +1,33 @@
+From 36a8cb73953de09212b010a8c0ce7e5a65d5807d Mon Sep 17 00:00:00 2001
+From: AoEiuV020 <aoeiuv020@gmail.com>
+Date: Sun, 26 Mar 2023 23:52:19 +0800
+Subject: [PATCH 4/6] change danmu size
+
+---
+ smali/a9/c.smali | 5 ++++-
+ 1 file changed, 4 insertions(+), 1 deletion(-)
+
+diff --git a/smali/a9/c.smali b/smali/a9/c.smali
+index bc20d43..769ab3a 100644
+--- a/smali/a9/c.smali
++++ b/smali/a9/c.smali
+@@ -299,12 +299,15 @@
+     .line 38
+     :cond_1
+     :goto_0
+-    invoke-interface {p2}, Lcom/kuaishou/akdanmaku/ui/a;->g()F
++    invoke-interface {p2}, Lcom/kuaishou/akdanmaku/ui/a;->c()I
+ 
+     .line 39
+     .line 40
+     .line 41
+     move-result p2
++    int-to-float p2, p2
++    const/high16 v1, 0x43b40000    # 360.0f
++    div-float/2addr p2, v1
+ 
+     .line 42
+     const v1, 0x3f19999a    # 0.6f
+-- 
+2.34.1
+

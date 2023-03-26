@@ -1,0 +1,50 @@
+From 583a97a8e4837e6c3d2e74662755c7715fb11412 Mon Sep 17 00:00:00 2001
+From: AoEiuV020 <aoeiuv020@gmail.com>
+Date: Sun, 26 Mar 2023 23:34:31 +0800
+Subject: [PATCH 2/6] change application id
+
+---
+ AndroidManifest.xml | 10 +++++-----
+ 1 file changed, 5 insertions(+), 5 deletions(-)
+
+diff --git a/AndroidManifest.xml b/AndroidManifest.xml
+index 419d2f6..3f3b672 100644
+--- a/AndroidManifest.xml
++++ b/AndroidManifest.xml
+@@ -1,4 +1,4 @@
+-<?xml version="1.0" encoding="utf-8" standalone="no"?><manifest xmlns:android="http://schemas.android.com/apk/res/android" android:compileSdkVersion="33" android:compileSdkVersionCodename="13" package="com.xx.blbl" platformBuildVersionCode="33" platformBuildVersionName="13">
++<?xml version="1.0" encoding="utf-8" standalone="no"?><manifest xmlns:android="http://schemas.android.com/apk/res/android" android:compileSdkVersion="33" android:compileSdkVersionCodename="13" package="com.aoeiuv020.bbll" platformBuildVersionCode="33" platformBuildVersionName="13">
+     <uses-feature android:name="android.software.leanback" android:required="false"/>
+     <uses-feature android:name="android.hardware.touchscreen" android:required="false"/>
+     <uses-permission android:name="android.permission.INTERNET"/>
+@@ -10,8 +10,8 @@
+     <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES"/>
+     <uses-permission android:name="com.google.android.gms.permission.AD_ID"/>
+     <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE"/>
+-    <permission android:name="com.xx.blbl.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" android:protectionLevel="signature"/>
+-    <uses-permission android:name="com.xx.blbl.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"/>
++    <permission android:name="com.aoeiuv020.bbll.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" android:protectionLevel="signature"/>
++    <uses-permission android:name="com.aoeiuv020.bbll.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"/>
+     <uses-permission android:name="android.permission.DOWNLOAD_WITHOUT_NOTIFICATION"/>
+     <uses-permission android:name="android.permission.POST_NOTIFICATIONS"/>
+     <queries>
+@@ -38,14 +38,14 @@
+             <meta-data android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+         </service>
+         <activity android:exported="false" android:name="com.google.android.gms.common.api.GoogleApiActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+-        <provider android:authorities="com.xx.blbl.firebaseinitprovider" android:directBootAware="true" android:exported="false" android:initOrder="100" android:name="com.google.firebase.provider.FirebaseInitProvider"/>
++        <provider android:authorities="com.aoeiuv020.bbll.firebaseinitprovider" android:directBootAware="true" android:exported="false" android:initOrder="100" android:name="com.google.firebase.provider.FirebaseInitProvider"/>
+         <receiver android:enabled="true" android:exported="false" android:name="com.google.android.gms.measurement.AppMeasurementReceiver"/>
+         <service android:enabled="true" android:exported="false" android:name="com.google.android.gms.measurement.AppMeasurementService"/>
+         <service android:enabled="true" android:exported="false" android:name="com.google.android.gms.measurement.AppMeasurementJobService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+         <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version"/>
+         <uses-library android:name="androidx.window.extensions" android:required="false"/>
+         <uses-library android:name="androidx.window.sidecar" android:required="false"/>
+-        <provider android:authorities="com.xx.blbl.androidx-startup" android:exported="false" android:name="androidx.startup.InitializationProvider">
++        <provider android:authorities="com.aoeiuv020.bbll.androidx-startup" android:exported="false" android:name="androidx.startup.InitializationProvider">
+             <meta-data android:name="androidx.emoji2.text.EmojiCompatInitializer" android:value="androidx.startup"/>
+             <meta-data android:name="androidx.lifecycle.ProcessLifecycleInitializer" android:value="androidx.startup"/>
+         </provider>
+-- 
+2.34.1
+

@@ -1,0 +1,25 @@
+From 50718a429a78a6c02daddef094c8dce0945dc77d Mon Sep 17 00:00:00 2001
+From: AoEiuV020 <aoeiuv020@gmail.com>
+Date: Sun, 26 Mar 2023 23:38:12 +0800
+Subject: [PATCH 3/6] change app name
+
+---
+ AndroidManifest.xml | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/AndroidManifest.xml b/AndroidManifest.xml
+index 3f3b672..a8737af 100644
+--- a/AndroidManifest.xml
++++ b/AndroidManifest.xml
+@@ -20,7 +20,7 @@
+             <data android:scheme="https"/>
+         </intent>
+     </queries>
+-    <application android:allowBackup="true" android:appComponentFactory="androidx.core.app.CoreComponentFactory" android:banner="@mipmap/ic_launcher_tv" android:dataExtractionRules="@xml/data_extraction_rules" android:fullBackupContent="@xml/backup_rules" android:icon="@mipmap/ic_launcher" android:label="@string/app_name" android:largeHeap="true" android:logo="@mipmap/ic_launcher_tv" android:name="com.xx.blbl.AppController" android:networkSecurityConfig="@xml/network_security_config" android:roundIcon="@mipmap/ic_launcher_round" android:supportsRtl="false" android:theme="@style/Theme.Blbl">
++    <application android:allowBackup="true" android:appComponentFactory="androidx.core.app.CoreComponentFactory" android:banner="@mipmap/ic_launcher_tv" android:dataExtractionRules="@xml/data_extraction_rules" android:fullBackupContent="@xml/backup_rules" android:icon="@mipmap/ic_launcher" android:label="BBLL·鱼" android:largeHeap="true" android:logo="@mipmap/ic_launcher_tv" android:name="com.xx.blbl.AppController" android:networkSecurityConfig="@xml/network_security_config" android:roundIcon="@mipmap/ic_launcher_round" android:supportsRtl="false" android:theme="@style/Theme.Blbl">
+         <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="true" android:label="@string/app_name" android:name="com.xx.blbl.ui.MainActivity" android:screenOrientation="landscape" android:theme="@style/Theme.Blbl.NoActionBar">
+             <intent-filter>
+                 <action android:name="android.intent.action.MAIN"/>
+-- 
+2.34.1
+

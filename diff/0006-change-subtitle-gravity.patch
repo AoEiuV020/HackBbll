@@ -1,0 +1,26 @@
+From 2a811aba117f495a3b633051a17fd9f8d9c37258 Mon Sep 17 00:00:00 2001
+From: AoEiuV020 <aoeiuv020@gmail.com>
+Date: Mon, 27 Mar 2023 00:25:59 +0800
+Subject: [PATCH 6/6] change subtitle gravity
+
+---
+ smali/com/xx/blbl/ui/fragment/o.smali | 3 +++
+ 1 file changed, 3 insertions(+)
+
+diff --git a/smali/com/xx/blbl/ui/fragment/o.smali b/smali/com/xx/blbl/ui/fragment/o.smali
+index 8328056..c8f1e14 100644
+--- a/smali/com/xx/blbl/ui/fragment/o.smali
++++ b/smali/com/xx/blbl/ui/fragment/o.smali
+@@ -4102,6 +4102,9 @@
+     const/4 v4, 0x0
+     invoke-virtual {p1, v4, v3}, Landroid/widget/TextView;->setTextSize(IF)V
+ 
++    const/16 v1, 0x11
++    invoke-virtual {p1, v1}, Landroid/widget/TextView;->setGravity(I)V
++
+     .line 303
+     .line 304
+     .line 305
+-- 
+2.34.1
+

@@ -1,0 +1,49 @@
+From ee98d33dde60fec991f1ec76ea9d865994cfbd35 Mon Sep 17 00:00:00 2001
+From: AoEiuV020 <aoeiuv020@gmail.com>
+Date: Sun, 26 Mar 2023 23:32:50 +0800
+Subject: [PATCH 1/6] fix
+
+---
+ res/values-v31/colors.xml | 26 +++++++++++++-------------
+ 1 file changed, 13 insertions(+), 13 deletions(-)
+
+diff --git a/res/values-v31/colors.xml b/res/values-v31/colors.xml
+index 0887ae4..01fa8c4 100644
+--- a/res/values-v31/colors.xml
++++ b/res/values-v31/colors.xml
+@@ -52,19 +52,19 @@
+     <color name="m3_ref_palette_dynamic_secondary90">@android:color/system_accent2_500</color>
+     <color name="m3_ref_palette_dynamic_secondary95">@android:color/system_accent2_400</color>
+     <color name="m3_ref_palette_dynamic_secondary99">@android:color/system_accent2_300</color>
+-    <color name="m3_ref_palette_dynamic_tertiary0">@android:color/Indigo_800</color>
+-    <color name="m3_ref_palette_dynamic_tertiary10">@android:color/Indigo_700</color>
+-    <color name="m3_ref_palette_dynamic_tertiary100">@android:color/system_accent3_300</color>
+-    <color name="m3_ref_palette_dynamic_tertiary20">@android:color/GM2_grey_800</color>
+-    <color name="m3_ref_palette_dynamic_tertiary30">@android:color/Blue_800</color>
+-    <color name="m3_ref_palette_dynamic_tertiary40">@android:color/Blue_700</color>
+-    <color name="m3_ref_palette_dynamic_tertiary50">@android:color/system_accent3_1000</color>
+-    <color name="m3_ref_palette_dynamic_tertiary60">@android:color/system_accent3_900</color>
+-    <color name="m3_ref_palette_dynamic_tertiary70">@android:color/system_accent3_800</color>
+-    <color name="m3_ref_palette_dynamic_tertiary80">@android:color/system_accent3_700</color>
+-    <color name="m3_ref_palette_dynamic_tertiary90">@android:color/system_accent3_600</color>
+-    <color name="m3_ref_palette_dynamic_tertiary95">@android:color/system_accent3_500</color>
+-    <color name="m3_ref_palette_dynamic_tertiary99">@android:color/system_accent3_400</color>
++    <color name="m3_ref_palette_dynamic_tertiary0">@*android:color/Indigo_800</color>
++    <color name="m3_ref_palette_dynamic_tertiary10">@*android:color/Indigo_700</color>
++    <color name="m3_ref_palette_dynamic_tertiary100">@*android:color/system_accent3_300</color>
++    <color name="m3_ref_palette_dynamic_tertiary20">@*android:color/GM2_grey_800</color>
++    <color name="m3_ref_palette_dynamic_tertiary30">@*android:color/Blue_800</color>
++    <color name="m3_ref_palette_dynamic_tertiary40">@*android:color/Blue_700</color>
++    <color name="m3_ref_palette_dynamic_tertiary50">@*android:color/system_accent3_1000</color>
++    <color name="m3_ref_palette_dynamic_tertiary60">@*android:color/system_accent3_900</color>
++    <color name="m3_ref_palette_dynamic_tertiary70">@*android:color/system_accent3_800</color>
++    <color name="m3_ref_palette_dynamic_tertiary80">@*android:color/system_accent3_700</color>
++    <color name="m3_ref_palette_dynamic_tertiary90">@*android:color/system_accent3_600</color>
++    <color name="m3_ref_palette_dynamic_tertiary95">@*android:color/system_accent3_500</color>
++    <color name="m3_ref_palette_dynamic_tertiary99">@*android:color/system_accent3_400</color>
+     <color name="m3_sys_color_dynamic_dark_background">@color/m3_ref_palette_dynamic_neutral10</color>
+     <color name="m3_sys_color_dynamic_dark_inverse_on_surface">@color/m3_ref_palette_dynamic_neutral20</color>
+     <color name="m3_sys_color_dynamic_dark_inverse_primary">@color/m3_ref_palette_dynamic_primary40</color>
+-- 
+2.34.1
+
