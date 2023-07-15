@@ -1,22 +1,22 @@
-From 36a8cb73953de09212b010a8c0ce7e5a65d5807d Mon Sep 17 00:00:00 2001
+From e82ceb1febecf980fb41592bef536af510dfbbc8 Mon Sep 17 00:00:00 2001
 From: AoEiuV020 <aoeiuv020@gmail.com>
-Date: Sun, 26 Mar 2023 23:52:19 +0800
-Subject: [PATCH 4/6] change danmu size
+Date: Sat, 15 Jul 2023 20:00:59 +0800
+Subject: [PATCH 4/7] change danmu size
 
 ---
- smali/a9/c.smali | 5 ++++-
+ smali/b8/c.smali | 5 ++++-
  1 file changed, 4 insertions(+), 1 deletion(-)
 
-diff --git a/smali/a9/c.smali b/smali/a9/c.smali
-index bc20d43..769ab3a 100644
---- a/smali/a9/c.smali
-+++ b/smali/a9/c.smali
-@@ -299,12 +299,15 @@
+diff --git a/smali/b8/c.smali b/smali/b8/c.smali
+index 54e7745..3ad0a38 100644
+--- a/smali/b8/c.smali
++++ b/smali/b8/c.smali
+@@ -1180,12 +1180,15 @@
      .line 38
      :cond_1
      :goto_0
--    invoke-interface {p2}, Lcom/kuaishou/akdanmaku/ui/a;->g()F
-+    invoke-interface {p2}, Lcom/kuaishou/akdanmaku/ui/a;->c()I
+-    invoke-interface {p2}, Lcom/kuaishou/akdanmaku/ui/a;->getDensity()F
++    invoke-interface {p2}, Lcom/kuaishou/akdanmaku/ui/a;->getHeight()I
  
      .line 39
      .line 40

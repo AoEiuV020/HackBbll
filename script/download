@@ -2,4 +2,4 @@
 . "$(dirname $0)/env"
 cd $ROOT
 curl -o bbll.apk -L \
-    'https://github.com/xiaye13579/BBLL/releases/download/v1.3.5/BLBL_release_v1.3.5.apk'
+    'https://github.com/xiaye13579/BBLL/releases/download/v1.4.0/BLBL_release_v1.4.0.apk'

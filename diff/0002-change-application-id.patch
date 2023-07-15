@@ -1,14 +1,14 @@
-From 583a97a8e4837e6c3d2e74662755c7715fb11412 Mon Sep 17 00:00:00 2001
+From 4574e41b595c9adb413f89da1f7a29b1209e38e3 Mon Sep 17 00:00:00 2001
 From: AoEiuV020 <aoeiuv020@gmail.com>
-Date: Sun, 26 Mar 2023 23:34:31 +0800
-Subject: [PATCH 2/6] change application id
+Date: Sat, 15 Jul 2023 13:15:54 +0800
+Subject: [PATCH 2/7] change application id
 
 ---
  AndroidManifest.xml | 10 +++++-----
  1 file changed, 5 insertions(+), 5 deletions(-)
 
 diff --git a/AndroidManifest.xml b/AndroidManifest.xml
-index 419d2f6..3f3b672 100644
+index 2cfb43b..887edac 100644
 --- a/AndroidManifest.xml
 +++ b/AndroidManifest.xml
 @@ -1,4 +1,4 @@

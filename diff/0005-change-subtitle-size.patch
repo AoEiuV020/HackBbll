@@ -1,30 +1,30 @@
-From ccfea7e2f5d1a787bd639c9107c5bbd74dfa120d Mon Sep 17 00:00:00 2001
+From d3111ecc53daf791a7fa3bbd8598b0979996fefa Mon Sep 17 00:00:00 2001
 From: AoEiuV020 <aoeiuv020@gmail.com>
-Date: Mon, 27 Mar 2023 00:13:30 +0800
-Subject: [PATCH 5/6] change subtitle size
+Date: Sat, 15 Jul 2023 13:31:42 +0800
+Subject: [PATCH 5/7] change subtitle size
 
 ---
- smali/com/xx/blbl/ui/fragment/o.smali | 7 +++++++
+ smali/com/xx/blbl/ui/fragment/r.smali | 7 +++++++
  1 file changed, 7 insertions(+)
 
-diff --git a/smali/com/xx/blbl/ui/fragment/o.smali b/smali/com/xx/blbl/ui/fragment/o.smali
-index cc0e748..8328056 100644
---- a/smali/com/xx/blbl/ui/fragment/o.smali
-+++ b/smali/com/xx/blbl/ui/fragment/o.smali
-@@ -4094,6 +4094,13 @@
-     .line 301
-     .line 302
-     invoke-virtual {p1, v4, v0}, Landroidx/appcompat/widget/AppCompatTextView;->setTextSize(IF)V
-+ 
-+    invoke-virtual {p1}, Landroid/widget/TextView;->getTextSize()F
+diff --git a/smali/com/xx/blbl/ui/fragment/r.smali b/smali/com/xx/blbl/ui/fragment/r.smali
+index 0f09999..8250fd6 100644
+--- a/smali/com/xx/blbl/ui/fragment/r.smali
++++ b/smali/com/xx/blbl/ui/fragment/r.smali
+@@ -3967,6 +3967,13 @@
+     .line 316
+     invoke-virtual {v1, v4, v3}, Landroidx/appcompat/widget/AppCompatTextView;->setTextSize(IF)V
+ 
++    invoke-virtual {v1}, Landroid/widget/TextView;->getTextSize()F
 +    move-result v3
 +    const/high16 v4, 0x40000000    # 2.0f
 +    mul-float/2addr v3, v4
 +    const/4 v4, 0x0
-+    invoke-virtual {p1, v4, v3}, Landroid/widget/TextView;->setTextSize(IF)V
- 
-     .line 303
-     .line 304
++    invoke-virtual {v1, v4, v3}, Landroid/widget/TextView;->setTextSize(IF)V
++
+     .line 317
+     .line 318
+     .line 319
 -- 
 2.34.1
 
