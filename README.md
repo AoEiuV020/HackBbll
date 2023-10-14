@@ -4,6 +4,8 @@
 [![CI](https://github.com/AoEiuV020/HackBbll/actions/workflows/main.yml/badge.svg)](https://github.com/AoEiuV020/HackBbll/actions/workflows/main.yml)
 [![img](https://img.shields.io/github/v/release/AoEiuV020/HackBbll.svg?include_prereleases)](https://github.com/AoEiuV020/HackBbll/releases)
 
+该版本已经无法登录，懒得更新了，弃坑，
+
 1. 改应用包名， com.aoeiuv020.bbll
 1. 改app名，BBLL·鱼
 1. 改弹幕大小，让不同设备显示效果尽量接近，
